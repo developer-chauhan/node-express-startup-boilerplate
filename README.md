@@ -47,7 +47,7 @@ If you consider my project as helpful stuff, You can appreciate me or my hard wo
 1.  Clone the project from github. Change "myproject" to your project name.
 
 ```bash
-git clone https://github.com/developer-chauhan/express-basic-startup-boilerplate.git
+git clone https://github.com/developer-chauhan/node-express-startup-boilerplate.git
 ```
 
 ### Using manual download ZIP
