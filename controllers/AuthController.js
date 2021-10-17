@@ -64,13 +64,13 @@ exports.register = [
 					);
 					// Html email body
 					let html = "<p>Please Confirm your Account.</p><p>OTP: "+otp+"</p>";
-					// Send confirmation email
-					mailer.send(
-						constants.confirmEmails.from, 
-						req.body.email,
-						"Confirm Account",
-						html
-					).then(function(){
+					//Send confirmation email
+					// mailer.send(
+					// 	constants.confirmEmails.from, 
+					// 	req.body.email,
+					// 	"Confirm Account",
+					// 	html
+					// ).then(function(){
 						// Save user.
 						user.save(function (err) {
 							if (err) { return apiResponse.ErrorResponse(res, err); }
@@ -82,10 +82,9 @@ exports.register = [
 							};
 							return apiResponse.successResponseWithData(res,"Registration Success.", userData);
 						});
-					}).catch(err => {
-						console.log(err);
-						return apiResponse.ErrorResponse(res,err);
-					}) ;
+					// }).catch(err => {
+					// 	return apiResponse.ErrorResponse(res,err);
+					// }) ;
 				});
 			}
 		} catch (err) {
